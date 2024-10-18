@@ -3,25 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyush Behera</title>
+    <title>Piyush Behera - Electronics Engineer</title>
+    <link rel="shortcut icon" href="assets/react-native-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <div class="heading">Piyush</div>
+            <span class="sideMenuButton" onclick="openNavbar()">&#9776;</span>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+        <!-- Side navigation bar for responsive website -->
+        <div class="sideNavigationBar" 
+            id="sideNavigationBar">
+            <a href="#" class="closeButton" onclick="closeNavbar()">&#10005;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
     </header>
     <main>
-        <section id="hero">
-            <h1>Hi, I'm Piyush</h1>
-            <p>Electronics Engineer</p>
+        <section id="hero" class="hero">
+            <div class="hero-1">
+                <h1>Piyush Behera</h1>
+                <p>A dedicated electronics engineer with hands-on experience in circuit design and embedded systems. Proficient in Python, C and hardware troubleshooting. Eager to apply my skills in a dynamic role within the electronics industry where I can contribute to innovate projects and grow professionally.</p>
+                <a class="btn" href="">Contact me</a>
+            </div>
+            <div class="hero-2">
+                <img src="assets/bg-demo.jpg" width="500">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About</h2>
+            <div class="boxes">
+                <div class="box">
+                    <p class="topic">Experience</p>
+                    <ul>
+                        <li>Internship at TPWODL (Jun24 - Jul24) <br>Learned electrical power supply units and transformer</li>
+                        <li>Internship at LinkQuest Telecom Ltd. Kolkata, WB (Jul24 - Aug24)  <br>Learned OFC system, Microwave comm., Wi-Fi & GPS System, & more.</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="topic">Projects</p>
+                    <li>Automatic Hand Sanitize <br>Uses sensor to detect hands and dispense a controlled amount of sanitizer</li>
+                    <li>Door Security Alarm <br>A system designed to detect intrusions, such as unauthorized entry</li>
+                </div>
+                <div class="box">
+                    <p class="topic">Education</p>
+                    <li>Diploma in Electronics and Telecommunication Engineering <br>Jharsuguda Engineering School, Jharsuguda - 2024</li>
+                    <li>Class 10th (CBSE Board) <br>Ghanashyam Hemlata Vidya Mandir (GHVM), Jharsuguda - 2022</li>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="contactMenu">
+                <div>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name here">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter your email here">
+                    <label>Message</label>
+                    <input type="text" placeholder="Enter your message here...">
+                    <a class="btn" href="">Send</a>
+                </div>
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <p class="footerContent">piyushbehera17@gmail.com</p>
+                    <h3>Address</h3>
+                    <p class="footerContent">Jharsuguda, Odisha - 768202</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

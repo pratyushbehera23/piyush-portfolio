@@ -1,3 +1,42 @@
+/* Root */
+
+:root {
+    --color-primary: #008496;
+}
+
+
+/* Text selection color */
+
+::-moz-selection {
+    color: #fff;
+    background: var(--color-primary);
+}
+::selection {
+    color: #fff;
+    background: var(--color-primary);
+}
+
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +49,14 @@ html {
 }
 
 body {
-    font-family: sans-serif;
     font-size: 1.6rem;
+    font-family: sans-serif;
+    /* background: #f1ffde; */
 }
 
-a {
-    text-decoration: none;
+
+/* --- BUG --- */
+
+.BUG {
+    border: 1px dashed #f00;
 }
